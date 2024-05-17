@@ -1,10 +1,12 @@
-npm i @analog-labs/timegraph-js
+1 
+        npm i @analog-labs/timegraph-js 
+        npm i @polkadot/keyring
 
-npm i @polkadot/keyring
+2 
+        nano index.js
 
-nano index.js
 
-
+3
 import { TimegraphClient } from "@analog-labs/timegraph-js";
 import { new_cert, build_apikey, encode_ssk, build_ssk } from "@analog-labs/timegraph-wasm";
 import { Keyring } from "@polkadot/keyring";
@@ -55,8 +57,10 @@ import { waitReady } from "@polkadot/wasm-crypto";
     console.log(response2);
 })();
 
+note: for save  press CTRL+X and press Y and press enter button
 
-package.json change
+4 
+        package.json change
 
  
 
@@ -79,15 +83,18 @@ package.json change
 }
 
 
+5 
+        NOTE on index.js you need change 
 
 
  
 const addr = "ADDRESS"; with your address
 const PHRASE = "SEED PARSE"; with your seed phase
- 
- hashId: "<hash id of the View>", // Look at watch.analog 
- name: "<name of the view>", // Look at watch.analog
 
 
+     hashId: "<hash id of the View>", // Look at watch.analog 
+     name: "<name of the view>", // Look at watch.analog
 
- node index.js
+
+6
+     node index.js
