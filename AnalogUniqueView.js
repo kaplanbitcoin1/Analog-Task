@@ -57,7 +57,14 @@ import { waitReady } from "@polkadot/wasm-crypto";
     console.log(response2);
 })();
 
+
+
+
+
+
 note: for save  press CTRL+X and press Y and press enter button
+
+
 
 4 
         package.json change
